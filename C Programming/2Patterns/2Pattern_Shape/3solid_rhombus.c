@@ -1,0 +1,29 @@
+/* 
+Input : n = 4
+Output : 
+Solid Rhombus:
+   ****
+  ****
+ ****
+****
+*/
+
+
+#include<stdio.h>
+void pattern(int n) {
+    for(int i=n;i>=1;i--){
+        
+        for(int j=1;j<i;j++)
+            printf(" ");
+        for(int j=1;j<=n;j++)
+            printf("*");
+            
+         printf("\n");
+    }
+}
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    pattern(n);
+}
